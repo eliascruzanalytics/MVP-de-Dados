@@ -1,14 +1,19 @@
 # MVP de Pipeline de Dados — Airflow com Docker
 
 Este repositório contém um **MVP de pipeline de dados** utilizando a arquitetura  
-**Bronze → Silver → Gold**, orquestrado com **Apache Airflow**, rodando localmente via **Docker**.
+**Bronze → Silver → Gold**, orquestrado com **Apache Airflow**, rodando localmente via **Docker/WSL**.
 
-O objetivo é demonstrar:
+🧪 Então… o que esse MVP PRECISA  
 
-- ingestão real de dados públicos (CSV)
-- separação clara de responsabilidades
-- falha explícita
-- pipeline simples e evolutivo
+•  Subir Airflow via Docker      
+•  Ter uma DAG clara  
+•  Ingerir um dado real (CSV público)   
+•  Gravar saída em data/bronze  
+•  Ter logs legíveis   
+•  Falhar se algo der errado  
+•  Ser fácil de entender por quem lê  
+  
+Se isso acontece → objetivo cumprido.  😄😄😄
 
 ---
 
@@ -23,9 +28,9 @@ Este projeto foi testado utilizando WSL (Windows Subsystem for Linux), que é a 
 
 Você precisa ter:
 
-WSL 2 instalado
+WSL 2 instalado - https://learn.microsoft.com/pt-br/windows/wsl/install   
 
-Docker Desktop configurado para usar WSL
+Docker Desktop configurado para usar WSL - https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2
 
 📌 Se você já instalou o Docker Desktop normalmente, provavelmente o WSL já está ativo.
 Para confirmar, execute no PowerShell:   
