@@ -70,4 +70,53 @@ Não é sobre usar todas as ferramentas possíveis.
 
 Este repositório está público e vai evoluir junto com essa série.   
 
-No próximo post, entro no primeiro cenário de ingestão: arquivos CSV — e por que eles continuam sendo onipresentes em pipelines de dados.
+✍️ Nos próximos posts, entro no primeiro cenário de ingestão: arquivos CSV — e por que eles continuam sendo onipresentes em pipelines de dados.
+
+# <p align="left">📌 #3 — Ingestão CSV (o cenário mais comum) </p>
+
+<img width="938" height="532" alt="image" src="https://github.com/user-attachments/assets/8730ebee-e691-46c7-9e4d-e951ab631f32" />
+
+Comecei o MVP pelo cenário mais comum no mundo real: arquivos CSV.
+
+CSV não é moderno.  
+CSV não é bonito.  
+Mas CSV continua dominando pipelines de dados.  
+
+E por alguns motivos bem práticos:  
+
+• é simples de gerar  
+• é fácil de compartilhar
+• funciona em qualquer stack
+• normalmente é o primeiro formato quando um processo nasce  
+
+Justamente por isso, a ingestão de CSV costuma ser onde os problemas aparecem primeiro.  
+
+Nesse MVP, tratei CSV com algumas premissas claras:  
+
+1️⃣ Validação mínima de schema  
+Antes de qualquer transformação, valido:  
+
+• existência de colunas esperadas  
+• tipos básicos (quando aplicável)
+• volume de registros
+
+Não é validação pesada.  
+É o suficiente para não propagar erro silencioso.  
+ 
+2️⃣ Separação clara entre ingestão e transformação  
+O CSV entra “como veio”.  
+Regras de negócio ficam fora da ingestão.  
+
+Isso facilita debug, reprocessamento e evolução.  
+
+3️⃣ Falha explícita  
+Se o arquivo não atende ao mínimo esperado, o pipeline falha.  
+
+Prefiro falhar cedo do que corrigir dados errados depois.  
+
+<img width="925" height="836" alt="image" src="https://github.com/user-attachments/assets/a360473f-83d6-420e-8d4d-8d1d62b21bf3" />
+
+   
+✍️ Nos próximos posts, entro no segundo cenário: ingestão via API, até lá!
+
+
