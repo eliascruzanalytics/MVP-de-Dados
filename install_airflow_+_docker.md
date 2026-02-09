@@ -59,7 +59,7 @@ Após instalar:
 
 ## 📥 Clonar ou baixar o projeto
 
-### Opção B — Download ZIP
+### Download ZIP
 
 1. Clique em **Code → Download ZIP**
 2. Extraia o arquivo
