@@ -76,6 +76,8 @@ Este repositório está público e vai evoluir junto com essa série.
 
 <img width="938" height="532" alt="image" src="https://github.com/user-attachments/assets/8730ebee-e691-46c7-9e4d-e951ab631f32" />
 
+👉 Antes de iniciar, ajuste seu ambiente...leia o arquivo https://github.com/eliascruzanalytics/MVP-de-Dados/blob/main/install_airflow_%2B_docker.md   
+   
 Comecei o MVP pelo cenário mais comum no mundo real: arquivos CSV.
 
 CSV não é moderno.  
@@ -114,9 +116,10 @@ Se o arquivo não atende ao mínimo esperado, o pipeline falha.
 
 Prefiro falhar cedo do que corrigir dados errados depois.  
 
-<img width="925" height="836" alt="image" src="https://github.com/user-attachments/assets/a360473f-83d6-420e-8d4d-8d1d62b21bf3" />
+<img width="995" height="886" alt="image" src="https://github.com/user-attachments/assets/de59ef17-9add-44af-b5a7-335850366306" />
+
 
    
-✍️ Nos próximos posts, entro no segundo cenário: ingestão via API, até lá!
+✍️ Nos próximos posts, entro no segundo cenário: ingestão via API e ajuste do DBEAVER para facilitar o acesso ao dado...até lá! 😄
 
 
